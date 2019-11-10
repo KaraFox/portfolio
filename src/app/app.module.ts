@@ -8,7 +8,7 @@ import { DevComponent } from './views/dev/dev.component';
 import { ProductComponent } from './views/product/product.component';
 import { HeaderComponent } from './views/global/header/header.component';
 import { FooterComponent } from './views/global/footer/footer.component';
-import { TabsModule } from 'ng-bootstrap/tabs';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { TabsModule } from 'ng-bootstrap/tabs';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TabsModule.forRoot()
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
