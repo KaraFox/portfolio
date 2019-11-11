@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { TabsModule } from 'ngx-bootstrap/tabs';
 
 @Component({
   selector: 'app-product',
