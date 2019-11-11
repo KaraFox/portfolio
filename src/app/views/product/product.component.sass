@@ -1,0 +1,12 @@
+@import "../../style/bootstrap/bootstrap"
+
+.case-study
+  margin-left: 200px
+
+  &.feedback
+    background: url('/assets/route-left.png')
+
+@include media-breakpoint-down(md)
+  ::ng-deep
+    .tab-content img
+      width: 60%

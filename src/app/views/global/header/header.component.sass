@@ -1,3 +1,22 @@
+@import "../../../style/bootstrap/bootstrap"
+
 header
-  border-bottom: 1px solid black;
-  margin-bottom: 10px;
+  border-bottom: 1px solid black
+  margin-bottom: 10px
+
+  @include media-breakpoint-down(md)
+    .navbar-nav:last-child
+      text-align: right
+      flex-direction: column-reverse
+
+      .nav-item a.btn-primary
+        padding-left: 10px
+        padding-right: 10px
+
+  @include media-breakpoint-down(xs)
+    .navbar
+      flex-direction: row
+
+      .navbar-nav:last-child
+        text-align: left
+        flex-direction: column

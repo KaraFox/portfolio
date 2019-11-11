@@ -1,95 +1,156 @@
 <h1>Product</h1>
-<!-- Case Studies | Tools | User Experience -->
 
-<h2>Case Studies</h2>
-<p>Investigate, research, and learn. Then use what you’ve learned; apply it in new ways.</p>
+<ngb-tabset type="pills" justify="center">
+  <ngb-tab title="Tools">
+    <ng-template ngbTabContent>
+      <h2>Tools</h2>
+      <img class="float-right" src="/assets/tools.png">
+      <p>The tools we use in product shifts with each new challenge.</p>
+      <hr />
+      <!-- <h3>Leading Change</h3>
+      https://docs.google.com/document/d/1U2IJxNMhZ0ko4Rll2D059TiBr3V--QozqegNgMacZWY/edit -->
+      <!-- <img src="draw.io/?state=%7B"ids":%5B"0BxdiVg6_L3imSTJNVmFjZkJDX1E"%5D,"action":"open","userId":"{userId}"%7D#G0BxdiVg6_L3imSTJNVmFjZkJDX1E" alt="Product Lifecycle Flowchart"> -->
+      <h3>
+        Discovery
+        <small class="d-block text-muted">Finding the Why</small>
+      </h3>
+      <p>
+        Building and understanding performance indicators based on business needs is the first step in creating
+        a successful product with happy users.
+      </p>
+      <h4>Market Research</h4>
+      <!-- <img src="https://docs.google.com/spreadsheets/d/1SJWmjSvWR36yX_DV3NqsfF_mkpYCUwPHR75ZS9OptDY/edit#gid=1079461865" alt="Market analysis tools, research, and findings matrices"> -->
+      <blockquote class="blockquote">
+        <p class="mb-0">Analyze user research findings and directional input to set goals and expectations</p>
+      </blockquote>
 
-<h3>Route End Feedback Loop</h3>
-<p>Improvements to where and when we ask users for feedback and reviews brought our store rating up, and consequently
-  also brought up the app ranking and usage stats.</p>
+      <p>
+        A successful approach that gains insignt into thought processes behind user behavior is audio-based
+        user experience testing (typically accompanied by video screensharing).
+        Showing the user a static (or existing) interface, they're asked to discuss aloud how they feel about
+        solutions and why they arrived at that answer.
+      </p>
 
-<h4>How and When to Ask</h4>
-<p>We had a simple display asking users to review after the 4th successful route completion. Route completions were
-  below 20%, so seeing this at all was very rare. This meant that most users who rated the app were rating because they
-  had a terrible experience. Not only that, but there was no clear way for users to provide feedback to us in a
-  constructive way.</p>
+      <h3 class="mt-5">
+        Consistent &amp; Clear Communication
+        <small class="d-block text-muted">With both Stakeholders and Teammates</small>
+      </h3>
 
-<h4>Learn &amp; Pivot</h4>
-<p>We first added an option to provide feedback into an existing confirmation alert that is shown when a user exits
-  navigation, allowing them to provide feedback, just exit nav, or cancel the action. The thinking here was to allow
-  users to provide us feedback on a route that wasn’t working for them right at the moment that they are exiting
-  navigation.</p>
-<p>Due to the placement of this option, we saw a 10x spike in emails to our customer service team. Unfortunately, most
-  were blank- indicating users were just clicking to get out of the navigation session rather than purposefully trying
-  to provide feedback. We quickly removed this option to get users back on the right path there. This was obviously the
-  wrong placement. Time to try again.</p>
+      <div class="card border border-dark mt-3 mt-md-0">
+          <div class="row no-gutters">
+            <div class="col-4 pr-3">
+              <img src="/assets/product-communication.png" class="card-img mt-3 mb-3" alt="">
+            </div>
+            <div class="col-8 bg-light rounded-lg">
+              <div class="card-body">
+                <p class="card-text">
+                  Having worked in development and technical architecture roles, I understand the importance of
+                  maintaining open product direction discussions with my team. Be it post standup chats or documented
+                  in a wiki, I know my team and I are on the same page about results and new opportunities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      <h3>
+        Monitor
+        <small class="text-muted">Pivot &amp; Reprioritize</small>
+      </h3>
+      <p>
+        I continually optimize product's key performance indicators as the market shifts. Watch usage trends
+        and obsess about feature adoption. Celebrate wins! What other insights do we have from the change?
+        What's next?
+      </p>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab title="Case Studies">
+    <ng-template ngbTabContent>
+      <h2>Case Studies</h2>
+      <p>Investigate, research, and learn. Then use what you’ve learned; apply it in new ways.</p>
 
-<h4>Final Product</h4>
-<p>A fellow engineer brought up the idea of providing the same review/feedback option that we do when the user
-  successfully arrives. We had since started showing this option for every successful arrival, it makes perfect sense to
-  stay consistent here and provide the same unobtrusive options at the end of navigation, whether the user has
-  successfully arrived or not. We ended with a consistent experience that offers users the option of rating or providing
-  feedback after any route.</p>
+      <hr />
+      <h3>Route End Feedback Loop</h3>
+      <p>Improvements to where and when we ask users for feedback and reviews brought our store rating up, and
+        consequently
+        also brought up the app ranking and usage stats.</p>
 
-<h4>Measuring Success</h4>
-<p>Success was measured by the amount of positive reviews as well as the amount of actionable feedback received by our
-  customer experience team. The ratings skyrocketed from 5 1-star reviews and just 3 5-star reviews (a 2.8 average for
-  the version) to 10 1-star reviews and 64 5-star reviews (a 4.3 average for the version) in 2 releases.</p>
-<p>As a bonus, the app’s ranking in the store increased because of the higher rating, causing downloads and UV’s to
-  follow suit and shoot through the roof. Our >4-star rating KPI had been achieved.</p>
+      <div class="pl-5">
+        <div class="card bg-light mt-3 mb-4">
+          <div class="card-body">
+            <h4 class="card-title">How and When to Ask</h4>
+            <p class="card-text">We had a simple display asking users to review after the 4th successful route
+              completion. Route completions were
+              below 20%, so seeing this at all was very rare. This meant that most users who rated the app were rating
+              because they
+              had a terrible experience. Not only that, but there was no clear way for users to provide feedback to us
+              in a
+              constructive way.</p>
+          </div>
+        </div>
 
-<h4>Continued Iteration</h4>
-<p>We continued to iterate on this feedback loop, as well other areas of the app!</p>
+        <div class="card bg-light mt-3 mb-4">
+          <div class="card-body">
+            <h4 class="card-title">Learn &amp; Pivot</h4>
+            <p class="card-text">We first added an option to provide feedback into an existing confirmation alert that
+              is shown when a user exits
+              navigation, allowing them to provide feedback, just exit nav, or cancel the action. The thinking here was
+              to allow
+              users to provide us feedback on a route that wasn’t working for them right at the moment that they are
+              exiting
+              navigation.</p>
+            <p class="card-text">Due to the placement of this option, we saw a 10x spike in emails to our customer
+              service team. Unfortunately, most
+              were blank- indicating users were just clicking to get out of the navigation session rather than
+              purposefully trying
+              to provide feedback. We quickly removed this option to get users back on the right path there. This was
+              obviously the
+              wrong placement. Time to try again.</p>
+          </div>
+        </div>
 
-<!-- <h3>Leading Change</h3>
-https://docs.google.com/document/d/1U2IJxNMhZ0ko4Rll2D059TiBr3V--QozqegNgMacZWY/edit -->
+        <div class="card bg-light mt-3 mb-4">
+          <div class="card-body">
+            <h4 class="card-title">Final Product</h4>
+            <p class="card-text">A teammate brought up the idea of providing the same review/feedback option that we do
+              when the user
+              successfully arrives. We had since started showing this option for every successful arrival, it makes
+              perfect sense to
+              stay consistent here and provide the same unobtrusive options at the end of navigation, whether the user
+              has
+              successfully arrived or not. We ended with a consistent experience that offers users the option of rating
+              or providing
+              feedback after any route.</p>
+          </div>
+        </div>
 
-<h2>Tools</h2>
-<!-- <img src="draw.io/?state=%7B"ids":%5B"0BxdiVg6_L3imSTJNVmFjZkJDX1E"%5D,"action":"open","userId":"{userId}"%7D#G0BxdiVg6_L3imSTJNVmFjZkJDX1E" alt="Product Lifecycle Flowchart"> -->
-<p>The tools we use in product shifts with each new challenge.</p>
-<h3>
-  Discovery
-  <small class="text-muted">Finding the Why</small>
-</h3>  
-<p>
-  Building and understanding performance indicators based on business needs is the first step in creating
-  a successful product with happy users.
-</p>
-<h4>Market Research</h4>
-<!-- <img src="https://docs.google.com/spreadsheets/d/1SJWmjSvWR36yX_DV3NqsfF_mkpYCUwPHR75ZS9OptDY/edit#gid=1079461865" alt="Market analysis tools, research, and findings matrices"> -->
-<blockquote class="blockquote">
-  <p class="mb-0">Analyze user research findings and directional input to set goals and expectations</p>
-</blockquote>
-  
-<p>
-  A successful approach that gains insignt into thought processes behind user behavior is audio-based
-  user experience testing (typically accompanied by video screensharing).
-  Showing the user a static (or existing) interface, they're asked to discuss aloud how they feel about 
-  solutions and why they arrived at that answer.
-</p>
+        <div class="card bg-light mt-3 mb-4">
+          <div class="card-body">
+            <h4>Measuring Success</h4>
+            <p>Success was measured by the amount of positive reviews as well as the amount of actionable feedback
+              received by our
+              customer experience team. The ratings skyrocketed from 5 1-star reviews and just 3 5-star reviews (a 2.8
+              average for
+              the version) to 10 1-star reviews and 64 5-star reviews (a 4.3 average for the version) in 2 releases.</p>
+            <p>As a bonus, the app’s ranking in the store increased because of the higher rating, causing downloads and
+              UV’s to
+              follow suit and shoot through the roof. Our >4-star rating KPI had been achieved.</p>
+          </div>
+        </div>
 
-<h3>
-  Consistent &amp; Clear Communication
-  <small class="text-muted">With both Stakeholders and Teammates</small>
-</h3>
-<p>
-  Having worked in development and technical architecture roles, I understand the importance of 
-  maintaining open product direction discussions with my team. Be it post standup chats or documented
-  in a wiki, I know my team and I are on the same page about results and new opportunities.
-</p>
+        <h4>Continued Iteration</h4>
+        <p>We continued to iterate on this feedback loop, as well other areas of the app!</p>
 
-<h3>
-  Monitor
-  <small class="text-muted">Pivot &amp; Reprioritize</small>
-</h3>
-<p>
-  I continually optimize product's key performance indicators as the market shifts. Watch usage trends
-  and obsess about feature adoption. Celebrate wins! What other insights do we have from the change?
-  What's next?
-</p>
+      </div>
 
-<!-- <h2>User Experience</h2>
-<ul>
-  <li>Storyboards</li>
-  <li>Set up wireframe and design A/B tests</li>
-</ul> -->
+
+    </ng-template>
+  </ngb-tab>
+  <!-- <ngb-tab title="User Experience">
+    <h2>User Experience</h2>
+    <ul>
+      <li>Storyboards</li>
+      <li>Wireframe and design A/B tests</li>
+    </ul>
+  </ngb-tab> -->
+</ngb-tabset>
