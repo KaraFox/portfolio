@@ -13,10 +13,18 @@ header
         padding-left: 10px
         padding-right: 10px
 
-  @include media-breakpoint-down(xs)
+  @include media-breakpoint-down(md)
     .navbar
-      flex-direction: row
+      display: block
 
       .navbar-nav:last-child
         text-align: left
-        flex-direction: column
+        flex-direction: row
+        justify-content: center
+
+        a
+          padding-top: 0
+          padding-bottom: 0
+          img
+            margin-right: 10px
+            height: 26px
