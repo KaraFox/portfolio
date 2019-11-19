@@ -1,0 +1,26 @@
+@import "../../style/bootstrap/bootstrap"
+
+.jumbotron
+  background-image: url('/assets/collaboration-ideation.png')
+  background-repeat: no-repeat
+  background-position: right bottom
+  background-size: 600px
+  padding-bottom: 2rem
+
+  @include media-breakpoint-down(md)
+    background-size: 400px
+
+  @include media-breakpoint-down(sm)
+    background-image: url('/assets/collaboration-ideation-sm.png')
+    background-size: 300px
+
+.card
+  width: 100%
+
+  .card-header
+    height: 50px
+
+    img
+      float: right
+      max-height: 100%
+      max-width: 100%
