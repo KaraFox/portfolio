@@ -12,11 +12,11 @@ img {
   background-image: url('/assets/collaboration-ideation.png');
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 600px;
+  background-size: 470px;
   padding-bottom: 2rem;
 
   @include media-breakpoint-down(md) {
-    background-size: 400px;
+    background-size: 330px;
   }
   @include media-breakpoint-down(sm) {
     background-image: url('/assets/collaboration-ideation-sm.png');
