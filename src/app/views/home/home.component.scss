@@ -12,6 +12,7 @@ img {
   background-image: url('/assets/collaboration-ideation.png');
   background-repeat: no-repeat;
   background-position: right bottom;
+  background-color: lighten($primary, 40%);
   background-size: 470px;
   padding-bottom: 2rem;
 
@@ -35,4 +36,8 @@ img {
       max-width: 100%;
     }
   }
+}
+
+.blockquote {
+  background-color: lighten($info, 60%);
 }
