@@ -12,9 +12,10 @@ img {
   background-image: url('/assets/collaboration-ideation.png');
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-color: lighten($primary, 40%);
+  background-color: transparent;
   background-size: 470px;
   padding-bottom: 2rem;
+  padding-top: 1rem;
 
   @include media-breakpoint-down(md) {
     background-size: 330px;
@@ -23,9 +24,24 @@ img {
     background-image: url('/assets/collaboration-ideation-sm.png');
     background-size: 300px;
   }
+
+  .badge-primary {
+    font-size: 1rem;
+  }
+  .badgeless {
+    @include media-breakpoint-up(xs) {
+      top: -15px;
+    }
+    position: relative;
+    padding: 19px 18px 15px 18px;
+  }
 }
 .card {
   width: 100%;
+
+  &.border.border-secondary {
+    border-width: 10px !important;
+  }
 
   .card-header {
     height: 50px;
@@ -39,5 +55,5 @@ img {
 }
 
 .blockquote {
-  background-color: lighten($info, 60%);
+  background-color: lighten($primary, 40%);
 }
