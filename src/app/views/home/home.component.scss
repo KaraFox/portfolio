@@ -14,9 +14,16 @@ img {
   background-position: right bottom;
   background-color: transparent;
   background-size: 470px;
-  padding-bottom: 2rem;
-  padding-top: 1rem;
+  padding: 0 0 2rem 0;
 
+  @include media-breakpoint-only(lg) {
+    background-image: url('/assets/collaboration-ideation-sm.png');
+    background-position: 130% bottom;
+    background-size: 600px;
+    .jumbotron-content {
+      padding-right: 250px;
+    }
+  }
   @include media-breakpoint-down(md) {
     background-size: 330px;
   }
@@ -29,7 +36,7 @@ img {
     font-size: 1rem;
   }
   .badgeless {
-    @include media-breakpoint-up(xs) {
+    @include media-breakpoint-up(xl) {
       top: -15px;
     }
     position: relative;
