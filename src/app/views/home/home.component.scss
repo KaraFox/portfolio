@@ -71,4 +71,8 @@ img {
 
 .blockquote {
   background-color: lighten($primary, 40%);
+  * {
+    max-width: 610px;
+    margin: 0 auto;
+  }
 }
