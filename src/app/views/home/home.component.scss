@@ -1,0 +1,78 @@
+@import "../../style/bootstrap/bootstrap";
+
+img {
+  @include media-breakpoint-down(md) {
+    width: 160px;
+  }
+  @include media-breakpoint-down(xs) {
+    width: 130px;
+  }
+}
+.jumbotron {
+  background-image: url('/assets/collaboration-ideation.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-color: transparent;
+  background-size: 470px;
+  padding: 0 0 2rem 0;
+
+  @include media-breakpoint-only(lg) {
+    background-image: url('/assets/collaboration-ideation-sm.png');
+    background-position: 130% bottom;
+    background-size: 600px;
+    .jumbotron-content {
+      padding-right: 250px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    background-size: 330px;
+  }
+  @include media-breakpoint-down(sm) {
+    background-image: url('/assets/collaboration-ideation-sm.png');
+    background-size: 300px;
+  }
+  h1 {
+    @include media-breakpoint-down(md) {
+      font-size: 70px;
+    }  
+    @include media-breakpoint-down(sm) {
+      font-size: 50px;
+    }  
+  }
+  .badge {
+    vertical-align: top;
+    &.badge-primary {
+      font-size: 1rem;
+    }
+    &.badgeless {
+      position: relative;
+      padding: 19px 18px 15px 18px;
+    }
+  }
+  margin: 0 5px 5px 0;
+}
+.card {
+  width: 100%;
+
+  &.border.border-secondary {
+    border-width: 10px !important;
+  }
+
+  .card-header {
+    height: 50px;
+
+    img {
+      float: right;
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.blockquote {
+  background-color: lighten($primary, 40%);
+  * {
+    max-width: 610px;
+    margin: 0 auto;
+  }
+}

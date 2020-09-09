@@ -8,7 +8,7 @@ import { DevComponent } from './views/dev/dev.component';
 import { ProductComponent } from './views/product/product.component';
 import { HeaderComponent } from './views/global/header/header.component';
 import { FooterComponent } from './views/global/footer/footer.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
