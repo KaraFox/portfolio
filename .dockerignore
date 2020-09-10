@@ -1,0 +1,13 @@
+.git
+node_modules
+.firebase
+.github
+e2e
+.editorconfig
+.firebaserc
+dist
+firebase.json
+README.md
+tsconfig.json
+tslint.json
+.gitignore
