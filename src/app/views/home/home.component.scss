@@ -30,6 +30,11 @@ img {
   @include media-breakpoint-down(sm) {
     background-image: url('/assets/collaboration-ideation-sm.png');
     background-size: 300px;
+    .jumbotron-content {
+      .badge-secondary {
+        white-space: normal;
+      }
+    }
   }
   h1 {
     @include media-breakpoint-down(md) {
