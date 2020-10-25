@@ -8,6 +8,5 @@ e2e
 dist
 firebase.json
 README.md
-tsconfig.json
 tslint.json
 .gitignore
