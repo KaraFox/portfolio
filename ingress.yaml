@@ -1,0 +1,18 @@
+---
+  apiVersion: "extensions/v1beta1"
+  kind: "Ingress"
+  metadata:
+    name: "portfolio-ingress"
+    namespace: "default"
+  spec:
+    backend:
+      serviceName: "portfolio-1-service"
+      servicePort: 80
+    rules:
+    - http:
+        paths:
+        - backend:
+            serviceName: "portfolio-1-service"
+            servicePort: 80
+      host:
+  
